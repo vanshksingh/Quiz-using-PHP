@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="home3.css" />
+  <title>HOME PAGE</title>
+</head>
+<body>
+    
+    <!-- New Home Page Section -->
+    <div class="container">
+        <div class="heading">
+            <h1>Choose Your Quiz Topic</h1>
+        </div>
+        <div id="home-page">
+            
+            <div class="subject-box" id="dsa" onclick="expandBox('dsa')">
+                <img src="./quiz img/dsa.png" class="topic-img" alt="dsa">
+            <div class="box-content">
+                <h2>Data Structures and Algorithms</h2>
+            </div>
+            </div>
+            <div class="subject-box" id="os" onclick="expandBox('os')">
+                <img src="./quiz img/os.jpeg" class="topic-img" alt="dsa">
+            <div class="box-content">
+                <h2>Operating Systems</h2>
+            </div>
+            </div>
+            <div class="subject-box" id="rdbms" onclick="expandBox('rdbms')">
+                <img src="./quiz img/rdbms.jpg" class="topic-img" alt="dsa">
+            <div class="box-content">
+                <h2>Database Management Systems</h2>
+            </div>
+            </div>
+            <div class="subject-box" id="web-tech" onclick="expandBox('web-tech')">
+                <img src="./quiz img/webtech.jpg" class="topic-img" alt="dsa">
+            <div class="box-content">
+                <h2>Web Technologies</h2>
+            </div>
+            </div>
+            <div class="subject-box" id="networking" onclick="expandBox('networking')">
+                <img src="./quiz img/network.jpeg" class="topic-img" alt="dsa">
+            <div class="box-content">
+                <h2>Networking</h2>
+            </div>
+            </div>
+            <div class="subject-box" id="aptitude" onclick="expandBox('aptitude')">
+                <img src="./quiz img/aptitude.png" class="topic-img" alt="dsa">
+            <div class="box-content">
+                <h2>Aptitude</h2>
+            </div>
+            </div>
+        </div>
+        <!-- Premium Feature -->
+        <div class="premium-feature" onclick="showOverlay(event)">
+            <img src="./quiz img/chimp.jpg" alt="" class="premium-feature-image"><br>
+            <div class="premium-text">Try Premium at just &#x20B9;99</div>
+        </div>
+    </div>
+    <!-- Overlay -->
+    <div id="overlay">
+        <div class="overlay-content">
+            <div class="subs-info">
+                <div class="price-div"><p class="price">&#x20B9;99 for 2 months</p></div>
+                <div class="overlay-h-div"><h3>QUIBBLY ~ Premium</h3></div>
+                <!-- <div class="overlay-img-div"><img class="overlay-img" src="./quiz img/chimp.jpg" alt=""></div>-->
+                <div class="overlay-content-text">
+                    <ul type="circle" class="premium-list">
+                        <li>Enjoy an Ad-free experience!</li><br>
+                        <li>Prepare yourself for competitive exams like GRE/GATE/CAT/IELTS with experienced tutors!</li><br>
+                        <li>Access and download study notes of experts!</li><br>
+                        <li>Ask your doubts on a personal session with our tutors!</li><br>
+                        <li>Test your IQ for free!</li><br>
+                    </ul>
+                </div>
+                <div ><button class="overlay-buy-button">GET PREMIUM</button></div>
+                <div class="close-button"><span  onclick="closeOverlay(event)">X</span></div>
+            </div>
+            <!-- <div class="overlay-box">1</div>
+            <div class="overlay-box">2</div>
+            <div class="overlay-box">3</div> -->
+        </div>
+    </div>
+    <script src="home3.js"></script>
+</body>
+</html>

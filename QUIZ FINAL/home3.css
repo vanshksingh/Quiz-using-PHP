@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+
+body {
+  background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.heading{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  background-image: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
+  position: fixed;
+  top: 0;
+  z-index: 9;
+}
+
+h1{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+#home-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+.subject-box {
+    display: flex;
+    flex-direction: row;
+  width: 240px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 20px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.subject-box:hover {
+  transform: scale(1.05);
+}
+
+.topic-img{
+    height: 65%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+.box-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  right: 0;
+  padding: 20px;
+  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+  text-align: center;
+}
+
+.box-content h2 {
+    margin: 0;
+  font-size: 24px;
+  color: white;
+}
+
+
+/* for scaling to the entire page */
+
+
+.expanded {
+    z-index: 9999;
+    animation: expandAnimation 1s ease-in forwards; /* Adjust animation duration */
+  }
+  
+  @keyframes expandAnimation {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.45); /* Adjust the scale factor as desired */
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.85); /* Keep the scale factor consistent until the end of animation */
+      opacity: 0;
+    }
+  }
+  
+
+
+/* Existing styles */
+
+/* Existing styles */
+
+.premium-feature {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 200px; /* Adjust size as needed */
+    height: 300px; /* Adjust size as needed */
+     /* Green background color */
+    color: white;
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    animation: bounce 1s infinite alternate; /* Bouncing animation */
+    z-index: 10;
+  }
+.premium-text{
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
+    border: 2px solid rgb(33, 30, 89);
+    padding-top: 5px;
+    height: 50px;
+    width: auto;
+    text-align: center;
+    margin: 0;
+    font-size: 17px; 
+    color: #000000;
+    font-weight: bold;
+  }
+  .premium-feature-image{
+    width: 200px; /* Adjust size as needed */
+    height: 200px; 
+    border-radius: 50%;
+    border: 3px solid #002147;
+  }
+  
+  @keyframes bounce {
+    to {
+      transform: translateY(-5px);
+    }
+  }
+  
+  /* Overlay styles */
+#overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    backdrop-filter: blur(8px); /* blur the background */
+    z-index: 9999; /* ensure it's above other content */
+    display: none; /* initially hidden */
+    width: 100vw; /* width of the overlay */
+    height: 100vh;
+    padding: 20px; /* add padding for spacing */
+}
+
+.overlay-content {   
+    width: 100vw; /* width of the overlay */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+}
+
+.subs-info {
+  position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    width: 40%; /* adjust width as needed */
+    height: 60%; /* adjust height as needed */
+    background-color: white;
+    color: black;
+    font-size: 24px;
+    
+    background-color: #fae6f7;
+}
+.price{
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:25px ;
+    margin: 0;
+    font-size: large;
+}
+.price-div{
+    background-color: #2acff8;
+    border-radius: 30px 0px 5px 0;
+    width: 200px;
+    height: auto;
+}
+.overlay-h-div{
+    padding-left: 10px;
+    margin: 0;
+    margin-top: -10px;
+    height: 70px;
+}
+
+/* .overlay-img-div{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay-img{
+    
+    padding-top: 0px;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+} */
+
+.overlay-content-text{
+  margin: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
+}
+
+.premium-list{
+  font-size: small;
+}
+
+.overlay-buy-button{
+  position: absolute;
+  bottom: 0;
+    background-color:#2acff8;
+    height: 60px;
+    width: 100%;
+    border-radius:0 0 30px 30px ;
+    border: none;
+    font-size: x-large;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: darkred;
+}
+
+
+
+
+
+
+

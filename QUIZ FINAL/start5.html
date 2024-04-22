@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Page</title>
+    <link rel="stylesheet" href="start5.css">
+</head>
+<body>
+    <div class="container">
+        <div id="heading">
+            <h2>Welcome to the Quiz</h2>
+            <p>This is where you will start your quiz. Make sure to read the instructions carefully before beginning.</p>
+        </div>
+        <div class="content" id="content">
+            <div id="instruction-block">
+                <h2>INSTRUCTIONS</h2>
+                <ul type="circle">
+                    <li>The quiz contains 10 questions.</li><br>
+                    <li>Each question has four options and only one correct answer.</li><br>
+                    <li>You can skip any question and also return to home during the quiz.</li><br>
+                    <li>There is one point for each question and no negative points.</li><br>
+                    <li>The quiz timer is 100 seconds, after which the quiz will end and your scores will be displayed.</li><br>
+                </ul>
+            </div>
+            <div class="start-btn">
+                <button id="start-btn">Start Quiz</button>
+                <button id="highscore-btn">View Score Board</button>
+            </div>
+        </div>
+        <div class="super-container">
+            <div id="quiz-container" style="display: none">
+                <div id="timer">Timer: <span id="timer-value"></span></div>
+                <div id="progress-bar-text">0%</div>
+                <div id="progress-bar">
+                <div id="progress-bar-fill"></div>
+                </div>
+                <p id="message"></p>
+                <h2 id="question"></h2>
+                <button class="option-btn" id="btn0"></button>
+                <button class="option-btn" id="btn1"></button>
+                <button class="option-btn" id="btn2"></button>
+                <button class="option-btn" id="btn3"></button>
+
+                <button id="next-btn" style="display: none">Next Question</button>
+                <button id="skip-btn" style="display: none">Skip Question</button> <!-- Added Skip Question button -->
+                <button id="return-btn">Return Home</button>
+
+            </div>
+        </div>
+        <div class="ref" id="score-container" style="display: none">
+            <div id="header">    
+                <!-- Score container content -->
+                <h2>Your  Score: <span id="final-score"></span></h2>
+                <h2>High Score: <span id="final-high-score"></span></h2>
+                <button id="return-home-btn" style="display: none">Return Home</button>
+            </div>
+        </div>
+        <div id="highscore-page" style="display: none">
+            <!-- Highscore page content -->
+            <div class="scoreboard-heading"><h1>Score Board</h1></div>
+            <div id="highscores"></div>
+            <button id="return-home-from-scoreboard-btn">Return Home</button>
+        </div>
+        <!-- Premium Feature -->
+        <div class="premium-feature" onclick="showOverlay(event)">
+            <img src="./quiz img/chimp.jpg" alt="" class="premium-feature-image"><br>
+            <div class="premium-text">Try Premium at just ₹99</div>
+        </div>
+    </div>
+    <!-- Overlay -->
+    <div id="overlay">
+        <div class="overlay-content">
+            <div class="subs-info">
+                <div class="price-div"><p class="price">₹99 for 2 months</p></div>
+                <div class="overlay-h-div"><h3>QUIBBLY ~ Premium</h3></div>
+                <div class="overlay-content-text">
+                    <ul type="circle" class="premium-list">
+                        <li>Enjoy an Ad-free experience!</li><br>
+                        <li>Prepare yourself for competitive exams like GRE/GATE/CAT/IELTS with experienced tutors!</li><br>
+                        <li>Access and download study notes of experts!</li><br>
+                        <li>Ask your doubts on a personal session with our tutors!</li><br>
+                        <li>Test your IQ for free!</li><br>
+                    </ul>
+                </div>
+                <div ><button class="overlay-buy-button">GET PREMIUM</button></div>
+                <div class="close-button"><span  onclick="closeOverlay(event)">X</span></div>
+            </div>
+        </div>
+    </div>
+    <script src="start5.js"></script>
+</body>
+</html>
