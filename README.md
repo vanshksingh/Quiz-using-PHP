@@ -2,6 +2,11 @@
 
 # Quiz Taking Website
 
+
+![Screenshot 2024-04-23 at 5 15 11 AM](https://github.com/vanshksingh/Quiz-using-PHP/assets/114809624/9046c52f-b815-4a31-bab2-9524118a810b)
+
+
+
 This is a quiz-taking website built using PHP, designed to provide a platform for users to take quizzes and view their results. The project uses an XAMPP server to host the website and manage the database.
 
 ## Table of Contents
@@ -99,6 +104,7 @@ If you'd like to contribute to the project, please follow these steps:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
+![Screenshot 2024-04-23 at 5 15 01 AM](https://github.com/vanshksingh/Quiz-using-PHP/assets/114809624/7cdde8a7-675d-493e-8213-304993381ac6)
 
 SQL CODES TO BE RUN
 
